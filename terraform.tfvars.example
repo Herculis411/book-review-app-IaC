@@ -1,0 +1,32 @@
+########################################################################
+# Book Review App — Variable Values
+# SECURITY: This file is excluded from git via .gitignore
+# Fill in your actual values before running terraform apply
+########################################################################
+
+# ── General ────────────────────────────────────────────────────────────────
+aws_region   = "us-east-1"
+project_name = "book-review"
+environment  = "production"
+
+# ── Networking ─────────────────────────────────────────────────────────────
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["us-east-1a", "us-east-1b"]
+web_subnet_cidrs   = ["10.0.1.0/24", "10.0.2.0/24"]
+app_subnet_cidrs   = ["10.0.3.0/24", "10.0.4.0/24"]
+db_subnet_cidrs    = ["10.0.5.0/24", "10.0.6.0/24"]
+
+# ── EC2 ────────────────────────────────────────────────────────────────────
+key_name          = "your-key-pair-name"   # REPLACE with your AWS key pair name
+web_instance_type = "t3.small"
+app_instance_type = "t3.small"
+
+# ── Database ───────────────────────────────────────────────────────────────
+db_name           = "book_review_db"
+db_username       = "admin"
+db_password       = "CHANGE_ME_Strong_Pass_2026!"  # REPLACE with a strong password
+db_instance_class = "db.t3.micro"
+db_multi_az       = true
+
+# ── Application ────────────────────────────────────────────────────────────
+jwt_secret = "CHANGE_ME_jwt_secret_at_least_32_chars"  # REPLACE with a strong secret
