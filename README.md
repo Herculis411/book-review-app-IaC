@@ -1,4 +1,5 @@
-<img width="1204" height="2404" alt="image" src="https://github.com/user-attachments/assets/454e3e24-26b6-43bf-acf3-6b38ce4c11a8" />
+<img width="3484" height="3324" alt="image" src="https://github.com/user-attachments/assets/b8ee5002-82f0-4b25-97a9-67ccb4b1637e" />
+
 
 # Book Review App — Infrastructure as Code
 
