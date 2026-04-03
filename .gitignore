@@ -1,0 +1,61 @@
+# ── Terraform State & Sensitive Files ─────────────────────────────────────
+# NEVER commit these files — they contain secrets and infrastructure state
+terraform.tfvars
+terraform.tfvars.json
+*.tfvars
+*.tfvars.json
+
+# Terraform state files contain resource details including secrets
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files (may contain sensitive local configuration)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ── SSH & Keys ─────────────────────────────────────────────────────────────
+*.pem
+*.ppk
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# ── Environment Variables ──────────────────────────────────────────────────
+.env
+.env.*
+.env.local
+.env.production
+.env.development
+
+# ── OS Files ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE Files ─────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ── Logs ──────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Backend plan output (may contain sensitive values) ────────────────────
+tfplan
+tfplan.*
+*.plan
